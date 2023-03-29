@@ -1,0 +1,62 @@
+.centrale{
+    text-align: center;
+}
+
+.logo{
+    border-bottom: 1000px;
+    width: 150px;
+}
+
+.titoletto{
+    display: block;
+    color: #004b4a;
+    background-color: #fdfbf1;
+    border-top-style: solid;
+    border-width: 1.5px;
+    border-color: #ffd56b;
+    padding: 10px 0 10px 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.7rem;
+}
+
+.titolo{
+    display: block;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+.principale{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.link{
+    border-left-style: solid;
+    border-width: 1.5px;
+    border-color: #ffd56b;
+    padding-left: 15px;
+}
+
+.con{
+    color: orange
+}
+
+h3{
+    border-bottom-style: solid;
+    border-width: 1.5px;
+    border-color:aqua;
+    font-family:'Alkatra';
+}
+
+
+h5{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+ul{
+    font-family: 'Delicious Handrawn';
+}
+.fine{
+    text-decoration: underline;
+}
