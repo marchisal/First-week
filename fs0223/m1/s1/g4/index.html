@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout phone</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="../g4/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="general">
+        <header>
+            <img src="/m1/s1/g2/immagini/logo.svg" alt="Immagine logo">
+                <h1>Epicode - Il blog dei developers</h1>
+                <nav>
+                    
+                    <a href="index.html">&rArr; Home &lArr;</a>
+                    <a href="#Articoli">&rArr;Articoli &lArr;</a>
+                    <a href="#">&rArr;Lavora con noi &lArr;</a>
+
+                       
+                    
+                </nav>
+        </header>
+
+        <main>
+
+            <article>
+                <h2><b>Come creare un template per i post</b></h2>
+                
+                <h5>
+                    <i class="fa-sharp fa-solid fa-square-pen"></i>di Mario Rossi - pubblicato il 25-10-2020</h5>
+                
+                <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</p>
+                <h3>Le varie aree saranno suddivide in:</h3>
+                <p>
+                    <ul>
+                        <li>Contenuti di intestazione dei tag header</li>
+                        <li>Contenuti centrali variabili del tag main (corpo centrale)</li>
+                        <li>Contenuti di fine pagina comuni, da inserire nel tag footer</li>
+                        <li>Formattazione del codice</li>
+                    </ul>
+                </p>
+                <h3>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</h3>
+                <p>
+                    <ol>
+                        <li>Progettare il murkup assegnando ad ogni specifico testo il tag approppriato</li>
+                        <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                        <li>Applicare gli stili CSS</li>
+                        <li>L'applicazione degli stili CSS è cresciuta negli anni fino a raggiungere una diffusione pressoché totale</li>
+                    </ol>
+                </p>
+            </article>
+
+            <div>
+                <table>
+                    <caption>Diffusione dei CSS</caption>
+                    <thead>
+                        <tr>
+                            <th>Anno</th>
+                            <th>% di utilizzo</th>
+                            <th>Supporto browsers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2000</td>
+                            <td>20%</td>
+                            <td>17%</td>
+                        </tr>
+                        <tr>
+                            <td>2002</td>
+                            <td>35%</td>
+                            <td>22%</td>
+                        </tr>
+                        <tr>
+                            <td>2004</td>
+                            <td>45%</td>
+                            <td>42%</td>
+                        </tr>
+                        <tr>
+                            <td>2008</td>
+                            <td>80%</td>
+                            <td>51%</td>
+                        </tr>
+                        <tr>
+                            <td>2012</td>
+                            <td>100%</td>
+                            <td>76%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Un test di validazione potrà essere fatto tramite il <a href="#">tool online</a> dedicato allo scopo.</p>
+                <p>Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</p>
+                <iframe src="https://www.youtube.com/embed/kLDdAYIJVLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </main>
+
+        <aside>
+            <div>
+                <h2><b>novità</b></h2>
+                <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+                <form>
+                    <input type="email" placeholder="Inserisci la tua email">
+                    <input type="submit" value="Iscriviti!" onclick="alert('Registrazione avvenuta con successo!')"></input>
+                </form>
+            </div>
+            <div id="Articoli">
+                <h2>Articoli correlati</h2>
+                    <article>
+                        <ul>
+                            <li><a href="#">Validare il codice HTML</a></li>
+                            <li>Categoria: develop</li>
+                            <li>Data: 18-9-2020</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <ul>
+                            <li><a href="#">Correggere la sintassi</a></li>
+                            <li>Categoria: develop</li>
+                            <li>Data: 16-9-2020</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <ul>
+                            <li><a href="#">Meno Kb nella pagina</a></li>
+                            <li>Categoria: develop</li>
+                            <li>Data: 30-9-2020</li>
+                        </ul>
+                    </article>
+            </div>
+        </aside>
+
+        <footer>Copyright BlogEpicode ©2021
+            <p>Testata online di Maria Chiara Salis, registrata con prot. n. 213/2023 - via Argentiera 1 - Milano. P.IVA 12312312.</p>
+            <a href="#">salismariachiara@gmail.com</a>
+        </footer>
+    </div>
+
+    </body>
+
+</html>
