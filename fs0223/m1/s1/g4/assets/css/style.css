@@ -7,22 +7,17 @@ body{
     background-size: cover;
     background-size: auto;
     background-position: center;
+    line-height: 1.5rem;
 }
 
 *{box-sizing: border-box;}
-
 
 header, article, div, aside, footer{
     margin: 25px 25px;
 }
 
-
-
-
-
 /* HEADER */
 header{
-    width: 400px;
     height: 300px;
     background-color: rgb(52, 140, 240);
     padding: 30px;
@@ -35,7 +30,7 @@ header{
 }
 
 header img{
-    width: 150px;
+    width: 100%;
     margin: 0px;
 }
 
@@ -47,7 +42,7 @@ nav a {
 }
 
 h1{
-    margin: 40px;
+    margin: 20px;
     
     
 }
@@ -55,7 +50,8 @@ h1{
 
 iframe{
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
+    border-radius: 30px 30px;
 }
 
 main{
@@ -69,9 +65,10 @@ main{
 h2{
     text-align:left;
     font-family: 'poppins';
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
     font-weight: 800;
+    margin-bottom: 20px;
 }
 
 
@@ -89,19 +86,20 @@ p{
 
 .grey{
     background-color: grey;
-    border-radius: 5px;
-    padding: 0.8px;
-    
+    border-radius: 5px 5px;
+    padding: 0.5px; 
 }
+
 ul{
     padding-left: 30px;
-    font-size: 1rem;
-    
+    font-size: 1rem; 
 }
 
 ol{
     padding-left: 30px;
 }
+
+
 /* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
