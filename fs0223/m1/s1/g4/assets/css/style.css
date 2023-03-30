@@ -74,10 +74,33 @@ h2{
     font-weight: 800;
 }
 
-h5 i{
-    font-size: 100px;
-    color: grey;
-   
+
+p{
+    margin-bottom: 20px;
+    text-align:left;
+    font-family: 'poppins';
+    font-size: 1rem;
+    color: black;
+}
+
+.violette{
+    color:blueviolet
+}
+
+.grey{
+    background-color: grey;
+    border-radius: 5px;
+    padding: 0.8px;
+    
+}
+ul{
+    padding-left: 30px;
+    font-size: 1rem;
+    
+}
+
+ol{
+    padding-left: 30px;
 }
 /* ELEMENTI NEL MAIN - ARTICLE */
 
