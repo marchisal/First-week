@@ -11,9 +11,7 @@
     display: block;
     color: #004b4a;
     background-color: #fdfbf1;
-    border-top-style: solid;
-    border-width: 1.5px;
-    border-color: #ffd56b;
+    border-top-style: solid 1.5px #ffd56b;
     padding: 10px 0 10px 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.7rem;
@@ -45,9 +43,7 @@
 }
 
 h3{
-    border-bottom-style: solid;
-    border-width: 1.5px;
-    border-color:aqua;
+    border-bottom-style: solid 1.5px aqua;
     font-family:'Alkatra';
 }
 
@@ -57,6 +53,11 @@ h5{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida S
 ul{
     font-family: 'Delicious Handrawn';
 }
+
 .fine{
     text-decoration: underline;
+}
+
+footer{
+    margin-left: 200px;
 }
