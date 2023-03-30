@@ -28,7 +28,7 @@
 
 .principale{
    margin: 0 auto;
-   width: 600px;
+   width: 500px;
 }
 
 .link{
@@ -56,8 +56,4 @@ ul{
 
 .fine{
     text-decoration: underline;
-}
-
-footer{
-    margin-left: 200px;
 }
