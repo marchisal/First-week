@@ -1,0 +1,115 @@
+/* Your styles here */
+body{
+    text-align: center;
+    font-family: 'Open Sans';
+    color: #393d41;
+    font-size: 1.2rem;
+    line-height: 1.65;
+}
+*{
+    box-sizing: border-box;
+}
+.backg{
+    background-image: url('/m1/s1/g5/images/banner.jpg');
+    background-position: center;
+    background-size: 100%;
+    padding: 30px 40px;
+}
+button{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Montserrat';
+    background-color: #f04c2f;
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+h1{
+    font-family: 'Montserrat';
+    color: #25a2c3;
+    line-height: 1.5;
+    margin: 20px;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+h2{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1.7rem;
+}
+h3{
+    font-family: 'Montserrat';
+    color: #25a2c3;
+    line-height: 1.5;
+    margin: 20px;
+}
+header{
+    padding: 20px;
+    background-color: black;
+    
+}
+.logo{
+   width: 30%;
+}
+.imgnotebook{
+    width: 60%;
+    border-radius: 100%;
+}
+.imgG{
+    width: 100%;
+}
+.motiv{
+    padding: 10px 30px;
+}
+.remains{
+    background-color: #e22d0e;
+    padding: 20px 60px;
+    color: white;
+    margin-bottom: 60px;
+}
+.remains h2, .remains p{
+    margin: 20px 5px;
+}
+.remains p{
+    font-size: 0.9rem;
+    font-style: italic;
+}
+.remains h6{
+    font-size: 0.8rem;
+}
+.miniarticle{
+    border: 1px solid #dee1e3;
+    margin: 40px 40px;
+    padding-bottom: 50px;
+}
+footer{
+    background-color: #25a2c3;
+    padding-bottom: 30px;
+}
+address{
+    /*border-bottom: 2px solid #c8e7f0;*/
+    padding-bottom: 10px;
+}
+footer address a, footer address p{
+    display: block;
+    color: #c8e7f0;
+    font-size: 0.9rem;
+}
+.bottom{
+    color: #c8e7f0;
+}
+span{
+    text-decoration: underline;
+}
+footer h2{
+    padding: 20px 0;
+    font-size: 2rem;
+}
+footer p{
+    font-size: 0.7rem;
+}
+hr{
+    border-color: #c8e7f0;
+    width: 30%;
+}
