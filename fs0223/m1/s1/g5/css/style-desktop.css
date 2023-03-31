@@ -57,28 +57,33 @@ header{
    width: 30%;
 }
 .imgnotebook{
-    width: 30%;
+    width: 80%;
     border-radius: 100%;
     text-align: left;
 }
+.threeimg{
+    display: inline-block;
+    text-align: center;
+}
 .imgG{
-    width: 100%;
+    width: 20%;
 }
 .motiv{
     padding: 10px 10px;
 }
 
 .meta2{
-    display: inline;
+    display: inline-block;
 }
-.nervi{
-    
+.miniart{
+    display: inline-block;
 }
 .remains{
     background-color: #e22d0e;
     padding: 20px 60px;
     color: white;
     margin-bottom: 60px;
+    text-align: center;
 }
 .remains h2, .remains p{
     margin: 20px 5px;
@@ -91,13 +96,16 @@ header{
     font-size: 0.8rem;
 }
 .miniarticle{
-    border: 1px solid #dee1e3;
     margin: 40px 40px;
     padding-bottom: 50px;
+}
+.threeimg{
+    display: inline;
 }
 footer{
     background-color: #25a2c3;
     padding-bottom: 30px;
+    text-align: center;
 }
 address{
     /*border-bottom: 2px solid #c8e7f0;*/
