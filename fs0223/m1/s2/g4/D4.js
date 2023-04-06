@@ -256,3 +256,7 @@ console.log(characters);
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
+let p = Math.floor(Math.random() * starWarsCharacters.length - 1);
+
+
+console.log(` Mi chiamo ${starWarsCharacters[p].name} , sono alto ${starWarsCharacters[p].height} e peso ${starWarsCharacters[p].mass}. Il colore dei miei capelli è ${starWarsCharacters[p].hair_color} ,della mia pelle è ${starWarsCharacters[p].skin_color} e del miei occhi è ${starWarsCharacters[p].eye_color}. Sono nato il ${starWarsCharacters[p].birth_year} e sono ${starWarsCharacters[p].gender}`);
