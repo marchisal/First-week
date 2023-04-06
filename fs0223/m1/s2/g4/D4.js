@@ -220,7 +220,13 @@ switch (true){
 /* ESERCIZIO 8
 Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi creare un nuovo array, o tentare la riassegnazione del valore corrispondente)
 */
-let y = 0;
+
+for (let prop in starWarsCharacters){
+  if (starWarsCharacters[prop].gender === "n/a"){
+    starWarsCharacters[prop].gender = "robot";
+  }
+}
+console.log(starWarsCharacters)
 
 /* EXTRA ESERCIZIO 9
 
@@ -231,6 +237,21 @@ Usa uno più for loop per raggiungere il risultato
 
 Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
+
+
+
+
+
+
+for (let same of femaleCharacters){
+  for (let same1 of characters){
+    if (same.name === same1){
+      let indice = characters.indexOf(same1);
+      characters.splice(indice, 1);
+    }
+  }
+}
+console.log(characters);
 
 /* EXTRA ESERCIZIO 10
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
