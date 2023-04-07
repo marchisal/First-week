@@ -1,0 +1,134 @@
+.corpo {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E9EDEE;
+}
+
+.bglogo {
+    background-color: #222F3F;
+}
+
+
+#logoamazon {
+    width: 10%;
+    padding: 10px 15px;
+}
+
+.menusup {
+    background-color: #37485C;
+    padding: 10px 20px;
+}
+
+.menu {
+    color: white;
+    background-color: #37485C;
+    border-collapse: collapse;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+.menu:hover {
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+#inthemiddle {
+    margin: 25px;
+
+}
+
+.exhortation {
+    color: white;
+    background-color: #F66307;
+    text-align: center;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+}
+
+.pacchidiNatale {
+    background-image: url("bg-image.png");
+    background-repeat: repeat;
+    background-position: top;
+    background-size: 1800px;
+    padding: 70px;
+    color: white;
+    text-align: center;
+}
+
+.pacchidiNatale h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 25px;
+}
+
+.pacchidiNatale h3 {
+    font-weight: 600;
+}
+
+.imginfilacontitoletti {
+
+    background-color: white;
+    padding: 25px 25px;
+    margin: 25px 0;
+}
+
+.miniaffiancati {
+    margin-bottom: 15px;
+    margin: 5px 0 35px 0;
+}
+
+.miniaffiancati h2 {
+    display: inline;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.miniaffiancati a {
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+.immagini4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.immaginiorizzontale {
+    width: calc(100% / 4 - 1rem);
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 0 20px 20px 0 #A7BBC4
+}
+
+.immaginigrandi {
+    width: 100%;
+}
+
+.immaginigrandicontitoletti {
+    text-align: center;
+    
+}
+
+.backtotop {
+    background-color: #37485C;
+    text-align: center;
+    padding: 25px;
+}
+
+.backtotop a {
+    color: white;
+    font-weight: 800;
+
+}
+
+.chiusura {
+    background-color: #222F3F;
+    text-align: center;
+    padding: 100px;
+}
