@@ -119,9 +119,23 @@ console.log(arr);
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-let stra = "ciao sono io";
-let stra2 = stra.split("");
-let stra3 = stra2.charAt(0);
+//eseguito in classe con Michele
+
+function upperFirst(string){
+    let wordsArray = string.split(" ");
+    let primaW = [];
+    for (let words of wordsArray){
+        let firstLetter = words[0].toUpperCase();
+        let altreW = words.slice(1);
+        words = firstLetter + words.slice(1)
+        primaW.push(words);
+    }
+    return primaW.join(" ");
+}
+let stra = upperFirst("ciao sono io");
+console.log(stra);
+
+
 
 
 
