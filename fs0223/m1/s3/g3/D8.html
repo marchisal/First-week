@@ -197,8 +197,69 @@
 
     const generateTable = function () {
       let table = document.querySelector('#tableArea');
+// da qui eseguito con Michele
+      let tabella = document.createElement('table');
+      let thead = document.createElement('thead');
+      let tbody = document.createElement('tbody');
+      let tr = document.createElement('tr');
 
+      table.append(tabella);
+      tabella.append(thead, tbody); //non lo fa appendChild
+      thead.append(tr);
+      
+      let colonne = ['immagine', 'nome prodotto', 'quantità', 'prezzo'];
+      for (colonna of colonne){
+        let th =document.createElement('th')
+        th.textContent = colonna;
+        tr.append(th)
+      }
+
+      let dati = [
+        {
+          immagine: 'url immagine',
+          nome_prodotto: 'lorem ipsum',
+          quantità: 1000,
+          prezzo: 1
+        },
+        {
+          immagine: 'url immagine',
+          nome_prodotto: 'lorem ipsum',
+          quantità: 1000,
+          prezzo: 1
+        },
+        {
+          immagine: 'url immagine',
+          nome_prodotto: 'lorem ipsum',
+          quantità: 1000,
+          prezzo: 1
+        },
+        {
+          immagine: 'url immagine',
+          nome_prodotto: 'lorem ipsum',
+          quantità: 1000,
+          prezzo: 1
+        }
+      ]
+      for (let riga of dati){
+        let tr = document.createElement ('tr');
+        
+        let immagine = document.createElement('td');
+        immagine.textContent = riga.immagine
+
+        let nome = document.createElement('td');
+        nome.textContent = riga.nome_prodotto
+
+        let quantità = document.createElement('td');
+        quantità.textContent = riga.quantità
+
+        let prezzo = document.createElement('td');
+        prezzo.textContent = riga.prezzo
+        
+        tr.append(immagine, nome, quantità, prezzo)
+        tbody.append(tr);
+      }
     }
+    generateTable();
 
     /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
