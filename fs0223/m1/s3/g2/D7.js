@@ -226,28 +226,37 @@ const movies = [
 */
 
 function oldYear() {
-   let olderFilm = movies[0];
+   let olderFilm = {};
 
    for (annoOld of movies){
-    if (olderFilm.Year > annoOld.Year){
+    if (olderfilm == {} || olderFilm.Year > annoOld.Year){
       olderFilm = annoOld;
     }
    }
    return olderFilm;
   }
   console.log(oldYear());
- 
 
-  /* let oldF = [];
+
+  //||
+
+  function oldYear() {
+  let oldF = [];
   for (annodelf of movies){
     oldF.push(annodelf.Year);
   }
   console.log(oldF);
   oldF.sort();
   console.log(oldF[0]);
-  oldF = movies */
+  
+  for (annodelf of movies){
+    if (annodelf.Year === oldF[0]){
+      return annodelf;
+    }
+  }
+}
 
-oldYear();
+console.log(oldYear());
 
 
 /* ESERCIZIO 11
