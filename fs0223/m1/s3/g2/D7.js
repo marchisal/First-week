@@ -4,36 +4,36 @@
 */
 
 {
-  function conc(a, b){
+  function conc(a, b) {
     let stringhe = a + b;
-    console.log(stringhe); 
-    
-   let a1 = stringhe.substring(0,2);
-   let b1 = stringhe.substring(9, 12);
-   return (a1 + b1).toUpperCase();
-    
-}
-console.log(conc("ciao", " a tutti").toUpperCase());
+    console.log(stringhe);
+
+    let a1 = stringhe.substring(0, 2);
+    let b1 = stringhe.substring(9, 12);
+    return (a1 + b1).toUpperCase();
+
+  }
+  console.log(conc("ciao", " a tutti").toUpperCase());
 }
 /* ESERCIZIO 2
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 {
-function randomNumb(polpetta){
-  let tenElem = [];
-  for (let i = 0; i < 10; i ++)
-  tenElem.push(Math.floor(Math.random() * 101));
-  return tenElem;
-}
-console.log(randomNumb());
+  function randomNumb(polpetta) {
+    let tenElem = [];
+    for (let i = 0; i < 10; i++)
+      tenElem.push(Math.floor(Math.random() * 101));
+    return tenElem;
+  }
+  console.log(randomNumb());
 }
 /* ESERCIZIO 3
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici (suggerimento: il metodo filter può aiutare)
 */
 let numb = [56, 43, 62, 77, 80, 23, 55, 64]
-function pari(sugo){
-  for (i of numb){
-    if(i % 2 == 0){
+function pari(sugo) {
+  for (i of numb) {
+    if (i % 2 == 0) {
       console.log(i);
     }
   }
@@ -43,21 +43,21 @@ pari();
 /* ESERCIZIO 4
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-function somma(radici){
+function somma(radici) {
   let somma1 = 0;
-  for (i=0; i < numb.length; i ++){
-   somma1 = somma1 + numb[i];
-   
+  for (i = 0; i < numb.length; i++) {
+    somma1 = somma1 + numb[i];
+
   }
   console.log(somma1);
 }
-  somma();
+somma();
 
 /* ESERCIZIO 5
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE)
 */
 
-let somma2= 0;
+let somma2 = 0;
 let ridotto = numb.reduce((dai, g) => dai + g, somma2);
 console.log(ridotto);
 
@@ -65,13 +65,13 @@ console.log(ridotto);
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-function somma3(n){
+function somma3(n) {
   let mad2 = [];
-  for (i of numb){
-  mad2.push(i + n);
-  
-}
-console.log(mad2);
+  for (i of numb) {
+    mad2.push(i + n);
+
+  }
+  console.log(mad2);
 }
 somma3(3);
 
@@ -82,12 +82,12 @@ somma3(3);
 
 const brand = ["Bosch", "Ariston", "Smeg"];
 
-function contab(){
+function contab() {
   let numbBrand = [];
-  for (i of brand){
+  for (i of brand) {
     numbBrand.push(i.length);
-}
-return numbBrand;
+  }
+  return numbBrand;
 }
 console.log(contab());
 
@@ -96,10 +96,10 @@ console.log(contab());
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
-function dispari(){
+function dispari() {
   let disp = [];
-  for (i = 1; i<100; i++){
-    if(i % 2 != 0){
+  for (i = 1; i < 100; i++) {
+    if (i % 2 != 0) {
       disp.push(i);
     }
   }
@@ -225,22 +225,35 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-function oldYear(){
-  let oldF = [];
+function oldYear() {
+   let olderFilm = movies[0];
+
+   for (annoOld of movies){
+    if (olderFilm.Year > annoOld.Year){
+      olderFilm = annoOld;
+    }
+   }
+   return olderFilm;
+  }
+  console.log(oldYear());
+ 
+
+  /* let oldF = [];
   for (annodelf of movies){
     oldF.push(annodelf.Year);
   }
   console.log(oldF);
   oldF.sort();
   console.log(oldF[0]);
-}
+  oldF = movies */
+
 oldYear();
 
 
 /* ESERCIZIO 11
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
-function howManyF(){
+function howManyF() {
   console.log(movies.length);
 }
 howManyF();
@@ -248,9 +261,9 @@ howManyF();
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
-function onlyName(){
+function onlyName() {
   let onlyN = [];
-  for (nome of movies){
+  for (nome of movies) {
     onlyN.push(nome.Title);
   }
   console.log(onlyN)
@@ -261,7 +274,7 @@ onlyName();
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
-function
+
 
 
 /* ESERCIZIO 14
