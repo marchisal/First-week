@@ -10,7 +10,11 @@ REGOLE
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
 const pets = ['dog', 'cat', 'hamster', 'redfish']
-console.log(pets)
+for (animali in pets){
+  console.log(animali);
+}
+//corretto dopo spiegazione Michele
+
 
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
