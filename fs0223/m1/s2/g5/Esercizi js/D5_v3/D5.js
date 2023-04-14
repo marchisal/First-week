@@ -10,7 +10,7 @@ REGOLE
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
 const pets = ['dog', 'cat', 'hamster', 'redfish']
-for (animali in pets){
+for (let animali in pets){
   console.log(animali);
 }
 //corretto dopo spiegazione Michele
