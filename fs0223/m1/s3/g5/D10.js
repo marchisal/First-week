@@ -394,7 +394,7 @@ function onlyTheYears() {
   let anni = [];
   for (let movie of movies) {
     anni.push(movie.Year);
-  }console.log(anni);
+  } console.log(anni);
 }
 onlyTheYears();
 
@@ -406,10 +406,10 @@ onlyTheYears();
 function onlyInLastMillennium() {
   let film = [];
   for (let movie of movies) {
-    if (movie.Year >= 2000){
+    if (movie.Year >= 2000) {
       film.push(movie);
     }
-  }return film;
+  } return film;
 }
 console.log(onlyInLastMillennium());
 
@@ -417,11 +417,11 @@ console.log(onlyInLastMillennium());
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
 
-function sumAllTheYears(){
+function sumAllTheYears() {
   let somma = 0;
-  for (let movie of movies){
+  for (let movie of movies) {
     somma += Number(movie.Year);
-  }return somma;
+  } return somma;
 }
 console.log(sumAllTheYears());
 
@@ -430,13 +430,13 @@ console.log(sumAllTheYears());
 */
 
 
-function searchByTitle(str){
+function searchByTitle(str) {
   let rings = [];
-  for (let movie of movies){
-    if (movie.Title.includes(str)){
+  for (let movie of movies) {
+    if (movie.Title.includes(str)) {
       rings.push(movie);
     }
-  }return rings;
+  } return rings;
 }
 console.log(searchByTitle("Rings"));
 
@@ -446,18 +446,18 @@ console.log(searchByTitle("Rings"));
 */
 
 
-function searchAndDivide(str){
+function searchAndDivide(str) {
   let rings = {
     match: [],
     unmatch: []
   };
-  for (let movie of movies){
-    if (movie.Title.includes(str)){
+  for (let movie of movies) {
+    if (movie.Title.includes(str)) {
       rings.match.push(movie);
-    }else{
+    } else {
       rings.unmatch.push(movie);
     }
-  }return rings;
+  } return rings;
 }
 console.log(searchAndDivide("Avengers"));
 
@@ -466,8 +466,8 @@ console.log(searchAndDivide("Avengers"));
 */
 
 
-function removeIndex(n){
-  movies.splice(n,1);
+function removeIndex(n) {
+  movies.splice(n, 1);
   return movies;
 }
 console.log(removeIndex(5));
@@ -477,30 +477,72 @@ console.log(removeIndex(5));
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
+document.querySelector("#container");
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+document.getElementsByTagName("td");
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
+function func() {
+  let a = document.getElementsByTagName("td");
+  for (let i of a) {
+    console.log(i.innerHTML);
+  }
+}
+func();
+
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
+
+function backgr() {
+  let a = document.querySelectorAll('a');
+  console.log(a);
+  for (let i of a) {
+    i.style.backgroundColor = "red";
+  }
+}
+backgr();
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
+function addLi() {
+
+  let b = document.createElement("li")
+  b.textContent = "ciao4";
+  let a = document.querySelector("#myList").append(b);
+}
+addLi();
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 
+function remLi() {
+  let a = document.querySelector("#myList");
+  a.remove("li");
+}
+remLi();
+
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+
+function addClass() {
+  let a = document.querySelectorAll("tr")
+  for (let i of a) {
+    i.classList.add("test");
+  }
+}
+addClass();
+
 
 // [EXTRA] JS Avanzato
 
@@ -516,6 +558,16 @@ console.log(removeIndex(5));
 
 */
 
+/* {
+  function halfTree(n) {
+    let tree = "";
+    for (i = 0; i < n; i++) {
+      tree += "*";
+      console.log(tree);
+    }
+  }
+  halfTree(3);
+} */
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
@@ -528,6 +580,32 @@ console.log(removeIndex(5));
 
 */
 
+function tree(n) {
+  let tree = "";
+  for (i = 0; i < n; i++) {
+    for (i = 0; i < n*2; i+=2){
+      for (i = 0; i < n*3; i+=2){
+        tree += "*";
+      }console.log(tree);
+    }console.log(tree);
+  }console.log(tree);
+}
+tree(3);
+
+
+/*   let tree = "";
+  let space = "al";
+ 
+  for (i=n; i>0; i--){
+    space -= "al";
+    console.log(space);
+  }
+ */
+
+
+
+
+
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
@@ -535,3 +613,162 @@ console.log(removeIndex(5));
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+function tree(n) {
+  let row = (n * 2) - 1;
+  for (let i = 1; i <= n * 2; i += 2) {
+    let string = "";
+    for (let j = 0; j < (row - 1) / 2; j++) {
+      string += " ";
+    }
+    for (let j = 0; j < i; j++) {
+      string += "*"
+    }
+    for (let j = 0; j < (row - 1) / 2; j++) {
+      string += " ";
+    }
+    row = row - 2;
+    console.log(string);
+  }
+}
+tree(3); */
