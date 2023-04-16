@@ -605,8 +605,8 @@ function tree(n) {
       for (i = 0; i < n * 3; i += 3) {
         tree += "*";
         
-      }
-    }
+      }console.log(tree);
+    }console.log(tree);
   }console.log(tree);
 }
 tree(3);
