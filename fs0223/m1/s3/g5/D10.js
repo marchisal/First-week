@@ -244,7 +244,7 @@ console.log(deleteProp(oggetto1, 0))
 
 
 
-
+/* Questo array viene usato per gli esercizi. Non modificarlo. */
 const movies = [
   {
     Title: 'The Lord of the Rings: The Fellowship of the Ring',
@@ -558,7 +558,7 @@ addClass();
 
 */
 
-/* {
+{
   function halfTree(n) {
     let tree = "";
     for (i = 0; i < n; i++) {
@@ -567,7 +567,7 @@ addClass();
     }
   }
   halfTree(3);
-} */
+}
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
@@ -580,27 +580,39 @@ addClass();
 
 */
 
+/* function tree(n) {
+  let tree1 = "  *";
+  let tree2 =" ";
+  let tree3 = tree1 + tree2;
+  console.log(tree3);
+  let tree4 = " **";
+  let tree5 ="* ";
+  let tree6 = tree4 + tree5;
+  console.log(tree6);
+  let tree7 = "*****"
+  console.log(tree7);
+}
+tree(3); */
+//qui stiamo ridendo ma comunque in console è uscito, 
+//sto scherzando
+
 function tree(n) {
   let tree = "";
   for (i = 0; i < n; i++) {
-    for (i = 0; i < n*2; i+=2){
-      for (i = 0; i < n*3; i+=2){
+    let tree1 = " "
+    for (i = 0; i < n * 2; i += 2) {
+      let tree2 = "   "
+      for (i = 0; i < n * 3; i += 3) {
         tree += "*";
-      }console.log(tree);
-    }console.log(tree);
+        
+      }
+    }
   }console.log(tree);
 }
 tree(3);
 
 
-/*   let tree = "";
-  let space = "al";
- 
-  for (i=n; i>0; i--){
-    space -= "al";
-    console.log(space);
-  }
- */
+
 
 
 
@@ -610,7 +622,7 @@ tree(3);
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 
-/* Questo array viene usato per gli esercizi. Non modificarlo. */
+
 
 
 
