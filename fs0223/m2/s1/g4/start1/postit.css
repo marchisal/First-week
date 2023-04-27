@@ -37,7 +37,7 @@ h3 {
 .it1 {
     background-color: rgb(221, 191, 55);
     transform: rotate(-5deg);
-    animation: postItAnimation 1s linear 1s backwards;
+    animation: postItAnimation 5s linear 1s backwards;
 }
 
 .it2 {
@@ -79,7 +79,7 @@ h3 {
 .it8 {
     background-color: rgba(49, 245, 176, 0.763);
     transform: rotate(9deg);
-    animation: postItAnimation 1s linear 8s backwards;
+    animation: postItAnimation 5s linear 8s backwards;
 }
 
 
@@ -90,17 +90,12 @@ h3 {
 
 @keyframes postItAnimation {
     0% {
-        transform: scale (3, 3);
+        scale: 3;
         opacity: 0;
-        z-index: 1;
-    }
-    50% {
-        opacity: 1.5;
     }
     100% {
-        transform: scale (1, 1);
+        scale: 1;
         opacity: 1;
-        z-index: 1;
     }
     
 }
