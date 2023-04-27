@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: brown;
+}
+
+.button {
+    background-color: rgb(213, 96, 41);
+    display: flex;
+    flex-direction: column;
+}
+
+.beeimg {
+    width: 10px;
+}
+
+
+.card {
+    background-color: blanchedalmond;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: brown;
+    display: flex;
+    flex-direction: column;
+}
