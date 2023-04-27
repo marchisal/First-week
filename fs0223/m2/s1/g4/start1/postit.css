@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lavagna {
+    width: 1300px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(207, 178, 178);
+    font-family:cursive;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-top: 30px;
+}
+
+h3 {
+    font-weight: 800;
+}
+
+
+.post{
+    width: 270px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-out;
+}
+
+.it1 {
+    background-color: rgb(221, 191, 55);
+    transform: rotate(-5deg);
+}
+
+.it2 {
+    background-color: rgb(82, 195, 82);
+    transform: rotate(5deg);
+}
+
+.it3 {
+    background-color: rgb(233, 119, 233);
+    transform: rotate(-8deg);
+}
+
+.it4 {
+    background-color: rgb(82, 195, 82);
+    transform: rotate(10deg);
+}
+
+.it5 {
+    background-color: rgb(233, 119, 233);
+    transform: rotate(-15deg);
+}
+
+.it6 {
+    background-color: rgb(221, 191, 55);
+    transform: rotate(-5deg);
+}
+
+.it7 {
+    background-color: rgb(82, 195, 82);
+    transform: rotate(17deg);
+}
+
+.it8 {
+    background-color: rgba(49, 245, 176, 0.763);
+    transform: rotate(9deg);
+}
+
+
+.post:hover{
+    transform: scale(1.2) rotate(0deg);
+}
