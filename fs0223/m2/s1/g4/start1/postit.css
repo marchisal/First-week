@@ -37,49 +37,49 @@ h3 {
 .it1 {
     background-color: rgb(221, 191, 55);
     transform: rotate(-5deg);
-    animation: postItAnimation 5s linear 1s backwards;
+    animation: postItAnimation 2s linear 1s backwards;
 }
 
 .it2 {
     background-color: rgb(82, 195, 82);
     transform: rotate(5deg);
-    animation: postItAnimation 5s linear 2s backwards;
+    animation: postItAnimation 2s linear 3s backwards;
 }
 
 .it3 {
     background-color: rgb(233, 119, 233);
     transform: rotate(-8deg);
-    animation: postItAnimation 5s linear 3s backwards;
+    animation: postItAnimation 2s linear 5s backwards;
 }
 
 .it4 {
     background-color: rgb(82, 195, 82);
     transform: rotate(10deg);
-    animation: postItAnimation 5s linear 4s backwards;
+    animation: postItAnimation 2s linear 7s backwards;
 }
 
 .it5 {
     background-color: rgb(233, 119, 233);
     transform: rotate(-15deg);
-    animation: postItAnimation 5s linear 5s backwards;
+    animation: postItAnimation 2s linear 9s backwards;
 }
 
 .it6 {
     background-color: rgb(221, 191, 55);
     transform: rotate(-5deg);
-    animation: postItAnimation 5s linear 6s backwards;
+    animation: postItAnimation 2s linear 11s backwards;
 }
 
 .it7 {
     background-color: rgb(82, 195, 82);
     transform: rotate(17deg);
-    animation: postItAnimation 5s linear 7s backwards;
+    animation: postItAnimation 2s linear 13s backwards;
 }
 
 .it8 {
     background-color: rgba(49, 245, 176, 0.763);
     transform: rotate(9deg);
-    animation: postItAnimation 5s linear 8s backwards;
+    animation: postItAnimation 2s linear 15s backwards;
 }
 
 
