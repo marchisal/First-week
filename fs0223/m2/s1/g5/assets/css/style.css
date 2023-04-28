@@ -1,0 +1,186 @@
+
+/* parte iniziale*/
+
+
+.top {
+     height: 60px;
+     background-color: #ffc017;
+     border-bottom: 1px solid black;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 100%;
+     position: fixed;
+     z-index: 1;
+
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    font-family: "Roboto";
+}
+
+.nav5 {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 14px;
+}
+
+/* parte grande gialla*/
+#start{
+    height: 500px;
+    background-color: #ffc017;
+    font-family: "Spectral";
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.incipit {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 200px;
+    
+}
+
+.m {
+    position: relative;
+    left: 100px;
+    top: 50px;
+ }
+
+
+
+
+h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+    
+}
+
+#start p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+#start button {
+    background-color: black;
+    color: white;
+    border-radius: 30px 30px;
+    border: none;
+    padding: 10px 35px;
+    font-size: 1rem;
+    display: flex;  
+}
+
+
+
+/* inizio parte con articoli */
+
+main {
+    font-family: "Roboto";
+    font-size: 1rem;
+}
+
+.tSection {
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 110px;
+    margin-top: 40px;
+}
+
+.article {
+    height: 30px;
+    width: 280px;
+    text-align: left;
+    display: flex;
+    margin-right: 50px;
+    margin-bottom: 3px;
+    flex-direction: column;
+    line-height: 1.5rem;
+    
+}
+
+.imgCreator {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+.imgg {
+    margin-right: 15px;
+}
+
+
+
+
+.firstSection {
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    margin: 20px auto;
+    padding: 0 110px;
+    height: 300px;
+}
+
+.articleNumber {
+    margin-right: 10px;
+}
+
+.img1, .img2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px 50px;
+}
+
+.img3 {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px 10px;
+}
+
+.img4, .img5, .img6 {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.articleNumber {
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgba(128, 128, 128, 0.511);
+}
+
+
+
+.inGray {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.creator {
+    font-size: 0.8rem;
+}
+h5 {
+    font-weight: 900;
+}
+
+.star {
+    width: 25px;
+    height: 25px;
+}

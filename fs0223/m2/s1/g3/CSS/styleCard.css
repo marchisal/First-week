@@ -25,6 +25,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .bio{
@@ -51,6 +52,7 @@ body{
 
 .bottom {
     height: 30px;
+    
     display:flex;
     align-items: center;
     justify-content: center;
