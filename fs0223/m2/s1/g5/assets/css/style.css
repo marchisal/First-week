@@ -181,6 +181,27 @@ h5 {
 }
 
 .star {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
+}
+
+/*articoli incolonnati*/
+
+.columnArticol {
+    display: flex;
+    flex-direction: column;
+}
+
+.article2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgArt {
+    max-width: 60%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
 }
