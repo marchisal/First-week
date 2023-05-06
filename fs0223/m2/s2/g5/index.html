@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/styleNetflix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
@@ -21,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
         <img class="logoNetflix" src="assets/netflix_logo.png" alt="Netflix logo">
         <button class="navbar-toggler btn-secondary" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,7 +47,7 @@
 
             </ul>
         </div>
-        <div class="conteiner">
+        <div class="conteiner pe-5 me-5">
             <div class="d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-search me-3" viewBox="0 0 16 16">
@@ -57,15 +60,32 @@
                     <path
                         d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
                 </svg>
+
                 <div class="dropdown">
-                    <button class="btn btn-secondary bg-dark dropdown-toggle border-0" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <button class="btn btn-secondary bg-dark dropdown-toggle border-0" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="assets/avatar.png" alt="img" height="30">
                     </button>
-                    <ul class="dropdown-menu">
-
-                        <li><a class="dropdown-item" href="#"><img src="assets/kids_icon.png" alt="Kids"
-                                    height="30"></a></li>
+                    <ul class="dropdown-menu bg-dark">
+                        <li>
+                            <a class="dropdown-item mx-3 text-white" href="#">
+                                <img src="assets/avatar.png" alt="immagine" height="30"> Profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item mx-3 text-white" href="#">
+                                <img src="assets/kids_icon.png" alt="Kids" height="30"> Kids</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item mx-3 text-white" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor"
+                                    class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                                    <path fill-rule="evenodd"
+                                        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                </svg> Esci
+                            </a>
+                        </li>
 
                     </ul>
                 </div>
@@ -77,27 +97,28 @@
     <!-- HEADER-->
 
     <div class="conteiner mx-3 my-5">
-        <div class="d-flex">
-            <div class="row">
-                <h2 class="text-white">TV Shows</h2>
-            </div>
-            <div class="row">
-                <div class="dropdown ms-5">
-                    <button class="noborder btn btn-dark bg-black border dropdown-toggle px-4" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h2 class="text-white d-inline">TV Shows</h2>
+                <div class="dropdown ms-5 d-inline">
+                    <button class="noborder btn btn-dark bg-black border dropdown-toggle px-4" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Genres
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item b" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Anime</a></li>
                         <li><a class="dropdown-item" href="#">Series</a></li>
                     </ul>
                 </div>
             </div>
+            <div>
+                <i class="fas fa-stream text-secondary"></i>
+                <i class="fas fa-th-large text-secondary"></i>
+            </div>
         </div>
     </div>
     </div>
-
 
 
     <!--CAROUSEL 1-->
@@ -196,7 +217,6 @@
             </button>
         </div>
     </div>
-
 
 
     <!--CAROUSEL 2-->
@@ -394,6 +414,44 @@
         </div>
     </div>
 
+
+    <!--FOOTER-->
+
+    <footer class=" text-gray m-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <i class="fab fa-facebook-square text-white m-2"></i>
+                    <i class="fab fa-instagram text-white m-2"></i>
+                    <i class="fab fa-twitter text-white m-2"></i>
+                    <i class="fab fa-youtube text-white m-2"></i>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column">
+                    <a class="linkFooter" href="#">Audio and Subtitles</a>
+                    <a class="linkFooter" href="#">Media Center</a>
+                    <a class="linkFooter" href="#">Privacy</a>
+                    <a class="linkFooter" href="#">Conctact Us</a>
+                    <button type="button" class="btn btn-outline-secondary">Service Code</button>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column">
+                    <a class="linkFooter" href="#">Audio Description</a>
+                    <a class="linkFooter" href="#">Investor Relations</a>
+                    <a class="linkFooter" href="#">Legal Notices</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column">
+                    <a class="linkFooter" href="#">Help Center</a>
+                    <a class="linkFooter" href="#">Jobs</a>
+                    <a class="linkFooter" href="#">Cookie Preferences</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column">
+                    <a class="linkFooter" href="#">Gift Card</a>
+                    <a class="linkFooter" href="#">Terms of Use</a>
+                    <a class="linkFooter" href="#">Corporate Information</a>
+                </div>
+            </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

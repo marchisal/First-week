@@ -1,7 +1,8 @@
 .logoNetflix {
-    height: 8%;
     width: 8%;
 }
+
+
 
 nav {
     color: white;
@@ -11,6 +12,22 @@ nav {
     border: none;
 }
 
+
+
 .noborder {
     border-radius: 0;
+}
+
+.linkFooter {
+    text-decoration: none;
+    color: gray;
+    
+}
+
+.fab {
+    font-size: 3rem;
+}
+
+.col-3 a {
+    margin: 20px 0;
 }
