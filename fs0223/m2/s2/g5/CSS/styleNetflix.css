@@ -31,3 +31,20 @@ nav {
 .col-3 a {
     margin: 20px 0;
 }
+
+.imgC:hover {
+    transition: transform 2s ease-out;
+    transform: scale(2);
+    z-index: 0;
+}
+
+.carousel-inner {
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+}
+
+
+.menuTenda:hover {
+    background-color: rgb(206, 86, 6);
+}
