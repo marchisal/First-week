@@ -1,0 +1,23 @@
+.logoNetflix {
+    width: 8%;
+}
+
+
+
+nav {
+    width: 100%;
+    color: white;
+}
+
+#buttonProfilo {
+    border: none;
+}
+
+h6 {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+::placeholder {
+    color: black;
+}
