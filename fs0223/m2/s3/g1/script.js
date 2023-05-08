@@ -57,7 +57,7 @@ class Pet {
     if(owner1.ownername === owner2.ownername){
         console.log("Uguali");
     }else{
-        console.log("diversi")
+        console.log("Diversi")
     }
     return owner1.ownername === owner2.ownername;
   };
