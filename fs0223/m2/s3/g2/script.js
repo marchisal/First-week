@@ -10,6 +10,7 @@ let nameArea = document.getElementById("name");
 saveB.addEventListener('click', (e) => {
     e.preventDefault()
     function createLi() {
+        
         let ulist = document.querySelector("#list")
         let list = document.createElement("li")
         ulist.innerHTML = ""
@@ -18,6 +19,7 @@ saveB.addEventListener('click', (e) => {
     }
     
     let name = nameArea.value
+    nameArea.value = ""
     createLi()
     localStorage.setItem('name', name)
 })
