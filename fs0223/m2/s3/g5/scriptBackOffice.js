@@ -18,11 +18,11 @@ if (productID) {
         method: "DELETE",
         headers: {
             Authorization:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMGMwYTg4Zjc0MDAwMTQyODc0Y2YiLCJpYXQiOjE2ODM4ODUwNjYsImV4cCI6MTY4NTA5NDY2Nn0.t1WWzoSqSg0CbykHlQjIGE3Aq8BxFuVqjCs3S3V_A0o",
-        }
+        },
       })
         .then((res) => {
           if (res.ok) {
-            alert("SCHEDA PRODOTTO CANCELLATA")
+            alert("SCHEDA PRODOTTO CANCELLATA");
             location.assign("index.html");
           } else {
             throw new Error("Problema nell'eliminazione del prodotto");
