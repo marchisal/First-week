@@ -4,35 +4,7 @@ let urlBarContent = new URLSearchParams(window.location.search);
 let productID = urlBarContent.get("productId");
 console.log(productID);
 
-if (productID) {
-    document.getElementById("backTitle").innerText =
-      "Backoffice page - Modifica PRODOTTO";
-    document.getElementById("save-button").innerText = "MODIFICA PRODOTTO";
 
-    //BOTTONE DELETE
-    let deleteB = document.getElementById("delete-button");
-    deleteB.classList.remove("d-none");
-    deleteB.addEventListener("click", () => {
-      //FETCH PER CANCELLARE delete PRODOTTO
-      fetch(product_URL + productID, {
-        method: "DELETE",
-        headers: {
-            Authorization:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMGMwYTg4Zjc0MDAwMTQyODc0Y2YiLCJpYXQiOjE2ODM4ODUwNjYsImV4cCI6MTY4NTA5NDY2Nn0.t1WWzoSqSg0CbykHlQjIGE3Aq8BxFuVqjCs3S3V_A0o",
-        },
-      })
-        .then((res) => {
-          if (res.ok) {
-            alert("SCHEDA PRODOTTO CANCELLATA");
-            location.assign("index.html");
-          } else {
-            throw new Error("Problema nell'eliminazione del prodotto");
-          }
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    });
-  }
 
 // CREAZIONE DEL PRODOTTO
 
@@ -112,3 +84,39 @@ productForm.addEventListener("submit", function (p) {
     .catch((err) => {
       console.log(err);
     });
+
+
+//FETCH PER ELIMINAZIONE PRODOTTO 
+
+    if (productID) {
+      document.getElementById("backTitle").innerText =
+        "Backoffice page - Modifica PRODOTTO";
+      document.getElementById("save-button").innerText = "MODIFICA PRODOTTO";
+  
+      //BOTTONE DELETE
+      let deleteB = document.getElementById("delete-button");
+      deleteB.classList.remove("d-none");
+      deleteB.addEventListener("click", () => {
+        //FETCH PER CANCELLARE delete PRODOTTO
+        fetch(product_URL + productID, {
+          method: "DELETE",
+          headers: {
+              Authorization:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMGMwYTg4Zjc0MDAwMTQyODc0Y2YiLCJpYXQiOjE2ODM4ODUwNjYsImV4cCI6MTY4NTA5NDY2Nn0.t1WWzoSqSg0CbykHlQjIGE3Aq8BxFuVqjCs3S3V_A0o",
+          },
+        })
+          .then((res) => {
+            if (res.ok) {
+              alert("SCHEDA PRODOTTO CANCELLATA");
+              location.assign("index.html");
+            } else {
+              throw new Error("Problema nell'eliminazione del prodotto");
+            }
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      });
+      let resetB = document.getElementById("reset-button");
+      resetB.classList.remove("d-none");
+      
+    }
