@@ -20,14 +20,21 @@ const getProduct = function () {
             let colTemplate = `
             <div class="col-12 col-md-3">
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title align-item-center">${product.name}</h5>
+              <div class="card-body bg-success p-2" style="--bs-bg-opacity: .5;">
+                <h5 class="card-title">${product.name}</h5>
+                <div class"d-flex justify-content-center" >
                 <img class="imgProduct" src=${product.imageUrl} alt="img" />
-                <p class="card-text">Descrizine del prodotto: ${product.description}</p>
+                </div>
+                
                 <p>${product.brand}</p>
                 <p>Prezzo: ${product.price}€</p>
-                <p>User ID: ${product._id}</p>
+                <p>ID prodotto: ${product._id}</p>
+                <div class"d-flex">              
                 <a href="backofficeProduct.html?productId=${product._id}" target="_blanck" class="btn btn-primary">MODIFICA</a>
+                
+                <a href="detailPage.html?productId=${product._id}" target="_blanck" class="btn btn-light">SCOPRI DI PIU'</a>
+                
+                </div>
               </div>
             </div>
           </div>`
