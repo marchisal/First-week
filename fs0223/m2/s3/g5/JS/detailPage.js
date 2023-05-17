@@ -16,35 +16,31 @@ const getOneProduct = function () {
       if (res.ok) {
         return res.json();
       } else {
-        throw new Error("Errore nel recupero della scheda prodotto");
+        throw new Error("Errore nel caricamento della chiamata");
       }
     })
     .then((data) => {
       console.log("Prodotti: ", data);
-      document.getElementById("name").value = data.name;
-      document.getElementById("imgURL").value = data.imageUrl;
-      document.getElementById("description").value = data.description;
         let colCard = `
             <div class="col-12">
             <div class="card">
-              <div class="card-body bg-success p-2" style="--bs-bg-opacity: .5;">
-                <h5 class="card-title">${(document.getElementById(
-                  "name"
-                ).value = data.name)}</h5>
-                <div class"d-flex justify-content-center" >
-                <img class="imgProduct" src=${(document.getElementById("imgURL").value = data.imageUrl)} alt="img" />
+              <div class="card-body d-flex flex-column align-items-center bg-light p-2" style="--bs-bg-opacity: .5;">
+                <h5 class="card-title">${data.name}</h5>
+                <div>
+                <img class="imgProduct" src=${data.imageUrl} alt="img" />
                 </div>               
-                <p>${(document.getElementById("description").value =data.description)}</p>                
+                <p>${data.description}</p>                
               </div>
             </div>
           </div>`;
         let rowForOneCard = document.getElementById("product-container");
         rowForOneCard.innerHTML = colCard;
-      });
-    }
+      })
     .catch((err) => {
       console.log(err);
     });
+  }
+    
 
 window.onload = () => {
   getOneProduct();
