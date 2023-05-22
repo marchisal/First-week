@@ -1,5 +1,5 @@
 var x = 5;
-var y = 68;
+var y = 69;
 function numeroCasuale(a, b) {
     var z = (Math.floor(Math.random() * (100) + 1));
     console.log(z);
