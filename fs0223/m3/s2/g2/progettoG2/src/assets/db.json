@@ -1,0 +1,53 @@
+[
+  {
+    "nome": "Caterina",
+    "cognome": "Piddi",
+    "favSport": "baseball"
+  },
+  {
+    "nome": "Paolo",
+    "cognome": "Ugas",
+    "favSport": "basket"
+  },
+  {
+    "nome": "Giulia",
+    "cognome": "Rossi",
+    "favSport": "calcio"
+  },
+  {
+    "nome": "Anna",
+    "cognome": "Martis",
+    "favSport": "basket"
+  },
+  {
+    "nome": "Giacomo",
+    "cognome": "Virdis",
+    "favSport": "tennis"
+  },
+  {
+    "nome": "Cosimo",
+    "cognome": "Sau",
+    "favSport": "baseball"
+  },
+  {
+    "nome": "Silvia",
+    "cognome": "Giuliacci",
+    "favSport": "nuoto"
+  },
+  {
+    "nome": "Luigi",
+    "cognome": "Disogra",
+    "favSport": "tennis"
+  },
+  {
+    "nome": "Carola",
+    "cognome": "De Francisci",
+    "favSport": "basket"
+  },
+  {
+    "nome": "Alberto",
+    "cognome": "Verdi",
+    "favSport": "nuoto"
+  }
+
+]
