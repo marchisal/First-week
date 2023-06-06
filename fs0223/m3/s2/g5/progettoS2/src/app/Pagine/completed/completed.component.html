@@ -1,0 +1,18 @@
+<div *ngIf="loading"> Loading...
+</div>
+
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>TITLE</th>
+    </tr>
+    <tr *ngFor="let oneToDo of listOfSomethingToDo">
+        <td *ngIf="oneToDo.completed">{{oneToDo.id}}</td>
+        <td *ngIf="oneToDo.completed">{{oneToDo.title}}</td>
+        <td>
+          <button (click)="change(oneToDo)">Rifai</button>
+          <button (click)="delete(oneToDo.id)">Elimina</button>
+        </td>
+    </tr>
+  </table>

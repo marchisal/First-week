@@ -1,0 +1,24 @@
+<form action="">
+  <input type="text" name="text" [(ngModel)]="somethingToDo.title" [(ngModel)]="text" placeholder="Inserisci qualcosa da fare...">
+  <button (click)="create()">Crea</button>
+  <div *ngIf="loading"> Loading...
+  </div>
+</form>
+
+
+
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>TITLE</th>
+    </tr>
+    <tr *ngFor="let oneToDo of listOfSomethingToDo">
+        <td *ngIf="!oneToDo.completed">{{oneToDo.id}}</td>
+        <td *ngIf="!oneToDo.completed">{{oneToDo.title}}</td>
+        <td>
+          <button (click)="change(oneToDo)">Completa</button>
+          <button (click)="delete(oneToDo.id)">Elimina</button>
+        </td>
+    </tr>
+  </table>
