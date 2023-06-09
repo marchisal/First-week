@@ -1,0 +1,20 @@
+<form>
+  <input
+  type="email" placeholder="email"
+  name="email" [(ngModel)]="email"
+  class="form-control">
+  <input
+  type="password" placeholder="password"
+  name="password" [(ngModel)]="password"
+  class="form-control">
+  <input
+  type="text" placeholder="Name"
+  name="name" [(ngModel)]="name"
+  class="form-control">
+  <input
+  type="text" placeholder="Surname"
+  name="surname" [(ngModel)]="surname"
+  class="form-control">
+
+  <button class="btn btn-primary"(click)="register()">registrati</button>
+</form>
